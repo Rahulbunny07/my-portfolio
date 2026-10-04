@@ -25,7 +25,7 @@ export default function Contact() {
       <div className="pointer-events-none absolute bottom-0 left-1/2 -z-10 h-[360px] w-[680px] -translate-x-1/2 rounded-full bg-accent/10 blur-[110px]" />
       <div className="container-page">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <p className="eyebrow">05 · Contact</p>
+          <p className="eyebrow">06 · Contact</p>
           <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
             Let's build something <span className="text-accent">reliable</span>.
           </h2>

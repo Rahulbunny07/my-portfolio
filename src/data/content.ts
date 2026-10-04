@@ -166,3 +166,68 @@ export const education = {
   degree: 'B.Tech, Computer Science and Engineering',
   period: '2016 – 2020',
 }
+
+export type SideProject = {
+  name: string
+  tagline: string
+  description: string
+  badge: string
+  image: string
+  stack: string[]
+  highlights: string[]
+  links: { label: string; href: string; kind: 'live' | 'code' }[]
+  note?: string
+}
+
+export const sideProjects: SideProject[] = [
+  {
+    name: 'Jenji',
+    tagline: 'Lead generation & email outreach automation for agencies',
+    description:
+      'A product I’m building to launch: agencies manage many clients from one admin panel, find and score leads, and run personalised multi-step email campaigns that run themselves.',
+    badge: 'Founder · sole developer',
+    image: `${import.meta.env.BASE_URL}projects/jenji.jpg`,
+    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'OpenAI API', 'Nodemailer', 'IMAP'],
+    highlights: [
+      'Admin and client portals with role-based access',
+      'Lead import, Google Maps prospecting and opportunity scoring',
+      'AI-written outreach, multi-step sequences and a send scheduler',
+      'SMTP account rotation with daily limits, open tracking and reply sync',
+    ],
+    links: [],
+    note: 'Private codebase · walkthrough available on request',
+  },
+  {
+    name: 'Ask the Lecture',
+    tagline: 'An AI study partner grounded in one lecture',
+    description:
+      'Ask questions about a recorded lecture and get answers only from what the teacher said, each with a clickable timestamp that jumps the video to that second.',
+    badge: 'Personal project',
+    image: `${import.meta.env.BASE_URL}projects/ask-the-lecture.jpg`,
+    stack: ['React', 'TypeScript', 'Express', 'MongoDB', 'Claude API'],
+    highlights: [
+      'Streaming answers with timestamp citations',
+      'Says plainly when the lecture doesn’t cover a question',
+      'Auto chapters, synced transcript and lecture notes',
+    ],
+    links: [
+      { label: 'Live demo', href: 'https://ask-the-lecture-beta.vercel.app/', kind: 'live' },
+      { label: 'Code', href: 'https://github.com/Rahulbunny07/ask-the-lecture', kind: 'code' },
+    ],
+  },
+  {
+    name: 'FreshFold',
+    tagline: 'Doorstep laundry ordering, end to end',
+    description:
+      'Customers build an order item by item, pick a store and follow it from pickup to delivery. Rebuilt from a bootcamp team project into a production-quality app.',
+    badge: 'Personal rebuild',
+    image: `${import.meta.env.BASE_URL}projects/freshfold.jpg`,
+    stack: ['React', 'TypeScript', 'Express', 'MongoDB', 'Zod', 'TanStack Query'],
+    highlights: [
+      'Server-side pricing and owner-scoped, JWT-protected APIs',
+      'Order status timeline with safe cancel-before-pickup',
+      'Integration tests and one-command demo data',
+    ],
+    links: [{ label: 'Code', href: 'https://github.com/Rahulbunny07/freshfold', kind: 'code' }],
+  },
+]

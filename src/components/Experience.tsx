@@ -6,9 +6,9 @@ export default function Experience() {
   const [main, ...earlier] = experience
 
   return (
-    <section id="experience" className="py-24 sm:py-32">
+    <section id="experience" className="border-y border-line bg-surface/40 py-24 sm:py-32">
       <div className="container-page">
-        <SectionHeading eyebrow="03 · Experience" title="From UI fixes to core backend services." />
+        <SectionHeading eyebrow="04 · Experience" title="From UI fixes to core backend services." />
 
         <Reveal>
           <div className="card p-6 sm:p-8">

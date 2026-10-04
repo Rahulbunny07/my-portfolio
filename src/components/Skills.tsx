@@ -6,9 +6,9 @@ const icons = { Frontend: Monitor, Backend: Server, Databases: Database, Tools: 
 
 export default function Skills() {
   return (
-    <section id="skills" className="border-y border-line bg-surface/40 py-24 sm:py-32">
+    <section id="skills" className="py-24 sm:py-32">
       <div className="container-page">
-        <SectionHeading eyebrow="04 · Skills" title="Tools I use day to day." />
+        <SectionHeading eyebrow="05 · Skills" title="Tools I use day to day." />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((g, i) => {
             const Icon = icons[g.group as keyof typeof icons]
